@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Junhaohan</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="Junhaohan">
+  <title>部署网站踩的坑 | Junhaohan</title>
+  <meta name="keywords" content=" Hexo , 网站 ">
+  <meta name="description" content="部署网站踩的坑 | Junhaohan">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="通过Hexo部署网站已配置公钥，本地git连接服务器需要输入密码服务器公钥配置错误。本地的id_psa为两行，复制到服务器时默认为一行，不需要修改，没有问题。 本地Hexo部署到服务器，提示无法连接远程仓库建议将部署地址更改为公网IP再次尝试。原因为域名指向的地址为github.io，所以无法访问指定目录。需要使用nginx来定向，nginx未生效就无法部署到服务器。">
 <meta property="og:type" content="article">
@@ -58,7 +58,7 @@
 
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/"
    class="avatar_target">
@@ -221,12 +221,60 @@
         </div>
     </div>
 </aside>
-<div id="post" class="index">
+<div id="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-部署网站踩的坑" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0junhaohan%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BB%93%E5%BA%93"><span class="toc-text">欢迎来到junhaohan的技术仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D"><span class="toc-text">框架介绍</span></a></li></ol>
+        <h1 class="article-title">部署网站踩的坑</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="前端">前端</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">Hexo</a>
+            
+            <a class="color3">网站</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2025-01-07 02:25:15'>2025-01-07 02:21</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%9A%E8%BF%87Hexo%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99"><span class="toc-text">通过Hexo部署网站</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%B2%E9%85%8D%E7%BD%AE%E5%85%AC%E9%92%A5%EF%BC%8C%E6%9C%AC%E5%9C%B0git%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%9C%80%E8%A6%81%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81"><span class="toc-text">已配置公钥，本地git连接服务器需要输入密码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0Hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%8C%E6%8F%90%E7%A4%BA%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-text">本地Hexo部署到服务器，提示无法连接远程仓库</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -239,12 +287,28 @@
     }
 </style>
 </div>
-            <h2 id="欢迎来到junhaohan的技术仓库"><a href="#欢迎来到junhaohan的技术仓库" class="headerlink" title="欢迎来到junhaohan的技术仓库"></a>欢迎来到junhaohan的技术仓库</h2><p>在这里，你可以看到junhaohan的学习笔记，研究记录，问题整理，心得感想等。</p>
-<h2 id="框架介绍"><a href="#框架介绍" class="headerlink" title="框架介绍"></a>框架介绍</h2><p>本页面通过 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 生成，使用<a target="_blank" rel="noopener" href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a>主题。</p>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="通过Hexo部署网站"><a href="#通过Hexo部署网站" class="headerlink" title="通过Hexo部署网站"></a>通过Hexo部署网站</h1><h2 id="已配置公钥，本地git连接服务器需要输入密码"><a href="#已配置公钥，本地git连接服务器需要输入密码" class="headerlink" title="已配置公钥，本地git连接服务器需要输入密码"></a>已配置公钥，本地git连接服务器需要输入密码</h2><p>服务器公钥配置错误。本地的id_psa为两行，复制到服务器时默认为一行，不需要修改，没有问题。</p>
+<h2 id="本地Hexo部署到服务器，提示无法连接远程仓库"><a href="#本地Hexo部署到服务器，提示无法连接远程仓库" class="headerlink" title="本地Hexo部署到服务器，提示无法连接远程仓库"></a>本地Hexo部署到服务器，提示无法连接远程仓库</h2><p>建议将部署地址更改为公网IP再次尝试。原因为域名指向的地址为github.io，所以无法访问指定目录。需要使用nginx来定向，nginx未生效就无法部署到服务器。</p>
 
-        </article>
-        
-        
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。 </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">
@@ -253,11 +317,11 @@
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
     </div>
-</div>
-<div class="full-toc">
-    <button class="full" data-title="切换全屏"><span class="min "></span></button>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏"><span class="min "></span></button>
 <a class="" id="rocket" ></a>
 
+    </div>
 </div>
 
 </body>
